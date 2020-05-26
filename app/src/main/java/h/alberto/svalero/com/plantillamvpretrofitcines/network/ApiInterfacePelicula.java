@@ -16,7 +16,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiInterfacePelicula {
-    @GET("movies")
+    @GET("peliculasws")
     Call<ArrayList<Film>> getPopularMovies();
 
 }

@@ -41,7 +41,7 @@ public class LstFilmsModel
             @Override
             public void onFailure(Call<ArrayList<Film>> call,
                                   Throwable t) {
-                //OnLoginListener.onFailure(null);
+                onLstFilmsListener.onFailure("Fallo: Listar Películas");
             }
         });
     }

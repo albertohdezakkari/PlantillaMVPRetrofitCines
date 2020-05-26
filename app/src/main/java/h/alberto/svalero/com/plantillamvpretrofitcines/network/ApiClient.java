@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiClient {
 
     public static final String BASE_URL =
-            "http://192.168.175.1:42644/RakutenTV/webresources/";
+            "http://172.17.133.97:42644/RakutenTV/webresources/";
 
     private static Retrofit retrofit = null;
     //Creamos un interceptor  y le indicamos el log level a usar

@@ -39,16 +39,10 @@ public class ListaPeliculasActivity
     private ArrayList<Film> lista;//Variable necesaria cuando se pulse un item de la lista
 
 
-
-    private int botonPulsado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_peliculas);
-
-
-        Bundle bundle=this.getIntent().getExtras();
-        int boton=bundle.getInt("boton");
 
         /*Instanciar al Presenter*/
         lstFilmsPresenter = new LstFilmsPresenter(this);

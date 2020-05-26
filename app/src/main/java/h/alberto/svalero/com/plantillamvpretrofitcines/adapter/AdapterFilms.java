@@ -67,10 +67,13 @@ public class AdapterFilms
     @Override
     public void onBindViewHolder(FilmViewHolder viewHolder, int posFila) {
 
+       /* Añadir URL para las imágenes
        String urlImage="http://192.0.0.0:8080/CinesAragon/images/"+
+
                lstFilms.get(posFila).getUrl()+".png";
        Picasso.get().load(urlImage).into(viewHolder.imagen);
-      //  viewHolder.imagen.setImageResource(lstFilms.get(posFila).getImagen());
+      */
+       //  viewHolder.imagen.setImageResource(lstFilms.get(posFila).getImagen());
         viewHolder.nombre.setText(lstFilms.get(posFila).getTitulo());
         viewHolder.visitas.setText("Visitas:"+
                String.valueOf(lstFilms.get(posFila).getnVotos()));
